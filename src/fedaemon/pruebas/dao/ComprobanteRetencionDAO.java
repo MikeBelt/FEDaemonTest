@@ -42,6 +42,7 @@ public final class ComprobanteRetencionDAO {
     
     protected frmMonitor frmMonitor;
     
+    //metodo para escanear la base
     public int consultarRetencionPendiente(ConexionBD con){
     int result=0;
     String select="SELECT COUNT(*) "
