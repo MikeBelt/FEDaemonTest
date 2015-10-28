@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<AutorizarNotaCredito xmlns:ns2="http://tempuri.org/" xmlns:ns3="http://schemas.datacontract.org/2004/07/infact_mvc.Services">
+    <ns2:infoTributaria xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="ns3:InfoTributaria">
+        <ns3:Ambiente>2</ns3:Ambiente>
+        <ns3:CodDoc>04</ns3:CodDoc>
+        <ns3:DirMatriz>CUENCA</ns3:DirMatriz>
+        <ns3:Estab>001</ns3:Estab>
+        <ns3:MailCliente></ns3:MailCliente>
+        <ns3:NombreComercial>TEVSUR</ns3:NombreComercial>
+        <ns3:Origen></ns3:Origen>
+        <ns3:PtoEmi>001</ns3:PtoEmi>
+        <ns3:RazonSocial>TEVSUR</ns3:RazonSocial>
+        <ns3:Ruc>0190133451001</ns3:Ruc>
+        <ns3:Secuencial>000001131</ns3:Secuencial>
+        <ns3:TipoEmision>1</ns3:TipoEmision>
+    </ns2:infoTributaria>
+    <ns2:infoNotaCredito xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="ns3:InfoNotaCredito">
+        <ns3:CodDocModificado>01</ns3:CodDocModificado>
+        <ns3:ContribuyenteEspecial>9999</ns3:ContribuyenteEspecial>
+        <ns3:DirEstablecimiento>CUENCA</ns3:DirEstablecimiento>
+        <ns3:FechaEmision>12/12/2014</ns3:FechaEmision>
+        <ns3:FechaEmisionDocSustento>11/12/2014</ns3:FechaEmisionDocSustento>
+        <ns3:IdentificacionComprador>1190002213001</ns3:IdentificacionComprador>
+        <ns3:Moneda>DOLAR</ns3:Moneda>
+        <ns3:Motivo>NO ESPECIFICADO</ns3:Motivo>
+        <ns3:NumDocModificado>001-001-000016033</ns3:NumDocModificado>
+        <ns3:ObligadoContabilidad>SI</ns3:ObligadoContabilidad>
+        <ns3:RazonSocialComprador>BANCO DE LOJA S.A.</ns3:RazonSocialComprador>
+        <ns3:Rise></ns3:Rise>
+        <ns3:TipoIdentificacionComprador>04</ns3:TipoIdentificacionComprador>
+        <ns3:TotalConImpuestos>
+            <ns3:TotalImpuesto>
+                <ns3:BaseImponible>1200.0</ns3:BaseImponible>
+                <ns3:Codigo>0</ns3:Codigo>
+                <ns3:CodigoPorcentaje>2</ns3:CodigoPorcentaje>
+                <ns3:Tarifa>12</ns3:Tarifa>
+                <ns3:Valor>144.00</ns3:Valor>
+            </ns3:TotalImpuesto>
+        </ns3:TotalConImpuestos>
+        <ns3:TotalSinImpuestos>1200.0</ns3:TotalSinImpuestos>
+        <ns3:ValorModificacion>1344.0</ns3:ValorModificacion>
+    </ns2:infoNotaCredito>
+    <ns2:detalle xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="ns3:ArrayOfDetalleNC">
+        <ns3:DetalleNC>
+            <ns3:Cantidad>1.0</ns3:Cantidad>
+            <ns3:CodigoAdicional>TV</ns3:CodigoAdicional>
+            <ns3:CodigoInterno>LOJA</ns3:CodigoInterno>
+            <ns3:Descripcion>VALOR QUE ACREDITAMOS A SU CUENTA,  POR DESCUENTO DEL 50% EN CUSTODIA EN   SERVI- CIOS AEREOS EN TRANSPORTE DE     VALORES  DEL MES DE DICIEMBRE DE 2014. FACTURA No 001-001-000016033.</ns3:Descripcion>
+            <ns3:Descuento>0.0</ns3:Descuento>
+            <ns3:Impuestos>
+                <ns3:Impuesto>
+                    <ns3:BaseImponible>1200.0</ns3:BaseImponible>
+                    <ns3:Codigo>2</ns3:Codigo>
+                    <ns3:CodigoPorcentaje>2</ns3:CodigoPorcentaje>
+                    <ns3:Tarifa>12</ns3:Tarifa>
+                    <ns3:Valor>144.00</ns3:Valor>
+                </ns3:Impuesto>
+            </ns3:Impuestos>
+            <ns3:PrecioTotalSinImpuesto>1200.0</ns3:PrecioTotalSinImpuesto>
+            <ns3:PrecioUnitario>1344.0</ns3:PrecioUnitario>
+        </ns3:DetalleNC>
+    </ns2:detalle>
+    <ns2:infoAdicional xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="ns3:ArrayOfInfoAdicional">
+        <ns3:InfoAdicional>
+            <ns3:Nombre>NCCLI|100001131</ns3:Nombre>
+            <ns3:Text></ns3:Text>
+        </ns3:InfoAdicional>
+    </ns2:infoAdicional>
+</AutorizarNotaCredito>

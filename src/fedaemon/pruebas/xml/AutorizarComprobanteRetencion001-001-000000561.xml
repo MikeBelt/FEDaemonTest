@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<AutorizarComprobanteRetencion xmlns:ns2="http://tempuri.org/" xmlns:ns3="http://schemas.datacontract.org/2004/07/infact_mvc.Services">
+    <ns2:infoTributaria xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="ns3:InfoTributaria">
+        <ns3:Ambiente>1</ns3:Ambiente>
+        <ns3:CodDoc>07</ns3:CodDoc>
+        <ns3:DirMatriz>AV. DE LA PRENSA 3558 Y CARLOS V</ns3:DirMatriz>
+        <ns3:Estab>001</ns3:Estab>
+        <ns3:MailCliente>daniel.davila@chasmachserv.com; facturacion.electronica@tevcol.com.ec</ns3:MailCliente>
+        <ns3:NombreComercial>TEVCOL Cia. Ltda.</ns3:NombreComercial>
+        <ns3:Origen xsi:nil="true"/>
+        <ns3:PtoEmi>001</ns3:PtoEmi>
+        <ns3:RazonSocial>TRANSPORTADORA ECUATORIANA DE VALORES Cia. Ltda.</ns3:RazonSocial>
+        <ns3:Ruc>1790023885001</ns3:Ruc>
+        <ns3:Secuencial>000000561</ns3:Secuencial>
+        <ns3:TipoEmision>1</ns3:TipoEmision>
+    </ns2:infoTributaria>
+    <ns2:infoCompRetencion xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="ns3:InfoCompRetencion">
+        <ns3:ContribuyenteEspecial>5368</ns3:ContribuyenteEspecial>
+        <ns3:DirEstablecimiento>QUITO, AV. DE LA PRENSA 3558 Y CARLOS V</ns3:DirEstablecimiento>
+        <ns3:FechaEmision>23/02/2015</ns3:FechaEmision>
+        <ns3:IdentificacionSujetoRetenido>0992687452001</ns3:IdentificacionSujetoRetenido>
+        <ns3:ObligadoContabilidad>NO</ns3:ObligadoContabilidad>
+        <ns3:PeriodoFiscal>02/2015</ns3:PeriodoFiscal>
+        <ns3:RazonSocialSujetoRetenido>CASH MACHINES SERVICE C. LTDA.</ns3:RazonSocialSujetoRetenido>
+        <ns3:TipoIdentificacionSujetoRetenido>04</ns3:TipoIdentificacionSujetoRetenido>
+    </ns2:infoCompRetencion>
+    <ns2:impuestos xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="ns3:ArrayOfImpuestosRetencion">
+        <ns3:ImpuestosRetencion>
+            <ns3:BaseImponible>80.0</ns3:BaseImponible>
+            <ns3:CodDocSustento>01</ns3:CodDocSustento>
+            <ns3:Codigo>1</ns3:Codigo>
+            <ns3:CodigoRetencion>341</ns3:CodigoRetencion>
+            <ns3:FechaEmisionDocSustento>23/02/2015</ns3:FechaEmisionDocSustento>
+            <ns3:NumDocSustento>001001000001460</ns3:NumDocSustento>
+            <ns3:PorcentajeRetener>2</ns3:PorcentajeRetener>
+            <ns3:ValorRetenido>1.6</ns3:ValorRetenido>
+        </ns3:ImpuestosRetencion>
+        <ns3:ImpuestosRetencion>
+            <ns3:BaseImponible>9.6</ns3:BaseImponible>
+            <ns3:CodDocSustento>01</ns3:CodDocSustento>
+            <ns3:Codigo>2</ns3:Codigo>
+            <ns3:CodigoRetencion>2</ns3:CodigoRetencion>
+            <ns3:FechaEmisionDocSustento>23/02/2015</ns3:FechaEmisionDocSustento>
+            <ns3:NumDocSustento>001001000001460</ns3:NumDocSustento>
+            <ns3:PorcentajeRetener>70</ns3:PorcentajeRetener>
+            <ns3:ValorRetenido>6.72</ns3:ValorRetenido>
+        </ns3:ImpuestosRetencion>
+    </ns2:impuestos>
+    <ns2:infoAdicional xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="ns3:ArrayOfInfoAdicional">
+        <ns3:InfoAdicional>
+            <ns3:Nombre>OBSERVACION</ns3:Nombre>
+            <ns3:Text>COMPR|100013699</ns3:Text>
+        </ns3:InfoAdicional>
+        <ns3:InfoAdicional>
+            <ns3:Nombre>CONTACTO</ns3:Nombre>
+            <ns3:Text>NO REGISTRADO</ns3:Text>
+        </ns3:InfoAdicional>
+        <ns3:InfoAdicional>
+            <ns3:Nombre>DIRECCION</ns3:Nombre>
+            <ns3:Text>V.M. RENDON Y P.CARBO</ns3:Text>
+        </ns3:InfoAdicional>
+        <ns3:InfoAdicional>
+            <ns3:Nombre>EMAIL</ns3:Nombre>
+            <ns3:Text>daniel.davila@chasmachserv.com; facturacion.electronica@tevcol.com.ec</ns3:Text>
+        </ns3:InfoAdicional>
+        <ns3:InfoAdicional>
+            <ns3:Nombre>FONO</ns3:Nombre>
+            <ns3:Text>022562434</ns3:Text>
+        </ns3:InfoAdicional>
+        <ns3:InfoAdicional>
+            <ns3:Nombre>FONO_ESTAB</ns3:Nombre>
+            <ns3:Text>02-2293440</ns3:Text>
+        </ns3:InfoAdicional>
+    </ns2:infoAdicional>
+</AutorizarComprobanteRetencion>

@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<AutorizarFactura xmlns:ns2="http://tempuri.org/" xmlns:ns3="http://schemas.datacontract.org/2004/07/infact_mvc.Services">
+    <ns2:infoTributaria xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="ns3:InfoTributaria">
+        <ns3:Ambiente>1</ns3:Ambiente>
+        <ns3:CodDoc>01</ns3:CodDoc>
+        <ns3:DirMatriz>AV. DE LA PRENSA 3558 Y CARLOS V</ns3:DirMatriz>
+        <ns3:Estab>001</ns3:Estab>
+        <ns3:MailCliente>nancy.gomez@kfc.com.ec</ns3:MailCliente>
+        <ns3:NombreComercial>TEVCOL PRUEBAS</ns3:NombreComercial>
+        <ns3:Origen></ns3:Origen>
+        <ns3:PtoEmi>001</ns3:PtoEmi>
+        <ns3:RazonSocial>TRANSPORTADORA ECUATORIANA DE VALORES</ns3:RazonSocial>
+        <ns3:Ruc>1790023885001</ns3:Ruc>
+        <ns3:Secuencial>000056857</ns3:Secuencial>
+        <ns3:TipoEmision>1</ns3:TipoEmision>
+    </ns2:infoTributaria>
+    <ns2:infoFactura xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="ns3:InfoFactura">
+        <ns3:ContribuyenteEspecial>3568</ns3:ContribuyenteEspecial>
+        <ns3:DirEstablecimiento>AV. DE LA PRENSA 3558 Y CARLOS V</ns3:DirEstablecimiento>
+        <ns3:FechaEmision>28/11/2014</ns3:FechaEmision>
+        <ns3:GuiaRemision>0</ns3:GuiaRemision>
+        <ns3:IdentificacionComprador>1791415132001</ns3:IdentificacionComprador>
+        <ns3:ImporteTotal>27288.59</ns3:ImporteTotal>
+        <ns3:Moneda>DOLAR</ns3:Moneda>
+        <ns3:ObligadoContabilidad>SI</ns3:ObligadoContabilidad>
+        <ns3:Propina>0.0</ns3:Propina>
+        <ns3:RazonSocialComprador>INT. FOOD SERVICES CORP.</ns3:RazonSocialComprador>
+        <ns3:TipoIdentificacionComprador>04</ns3:TipoIdentificacionComprador>
+        <ns3:TotalConImpuestos>
+            <ns3:TotalImpuesto>
+                <ns3:BaseImponible>24364.83</ns3:BaseImponible>
+                <ns3:Codigo>2</ns3:Codigo>
+                <ns3:CodigoPorcentaje>2</ns3:CodigoPorcentaje>
+                <ns3:Tarifa>12</ns3:Tarifa>
+                <ns3:Valor>2923.78</ns3:Valor>
+            </ns3:TotalImpuesto>
+        </ns3:TotalConImpuestos>
+        <ns3:TotalDescuento>0.0</ns3:TotalDescuento>
+        <ns3:TotalSinImpuestos>24364.83</ns3:TotalSinImpuestos>
+    </ns2:infoFactura>
+    <ns2:detalle xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="ns3:ArrayOfDetalle">
+        <ns3:Detalle>
+            <ns3:Cantidad>1.0</ns3:Cantidad>
+            <ns3:CodigoAuxiliar>V-TV-01</ns3:CodigoAuxiliar>
+            <ns3:CodigoPrincipal>QUITO</ns3:CodigoPrincipal>
+            <ns3:Descripcion>LIQUIDACION POR EL SERVICIO DE TRANSPORTE DE VALORES DEL 26 DE OCTUBRE AL 25 DE NOVIEMBRE 2014</ns3:Descripcion>
+            <ns3:Descuento>0.0</ns3:Descuento>
+            <ns3:Impuestos>
+                <ns3:Impuesto>
+                    <ns3:BaseImponible>13247.95</ns3:BaseImponible>
+                    <ns3:Codigo>2</ns3:Codigo>
+                    <ns3:CodigoPorcentaje>2</ns3:CodigoPorcentaje>
+                    <ns3:Tarifa>12</ns3:Tarifa>
+                    <ns3:Valor>1589.75</ns3:Valor>
+                </ns3:Impuesto>
+            </ns3:Impuestos>
+            <ns3:PrecioTotalSinImpuesto>13247.95</ns3:PrecioTotalSinImpuesto>
+            <ns3:PrecioUnitario>13247.95</ns3:PrecioUnitario>
+        </ns3:Detalle>
+        <ns3:Detalle>
+            <ns3:Cantidad>1.0</ns3:Cantidad>
+            <ns3:CodigoAuxiliar>V-TV-05</ns3:CodigoAuxiliar>
+            <ns3:CodigoPrincipal>QUITO</ns3:CodigoPrincipal>
+            <ns3:Descripcion>LIQUIDACION POR EL SERVICIO DE TRANSPORTE DE VALORES DEL 26 DE OCTUBRE AL 25 DE NOVIEMBRE 2014</ns3:Descripcion>
+            <ns3:Descuento>0.0</ns3:Descuento>
+            <ns3:Impuestos>
+                <ns3:Impuesto>
+                    <ns3:BaseImponible>103.5</ns3:BaseImponible>
+                    <ns3:Codigo>2</ns3:Codigo>
+                    <ns3:CodigoPorcentaje>2</ns3:CodigoPorcentaje>
+                    <ns3:Tarifa>12</ns3:Tarifa>
+                    <ns3:Valor>12.42</ns3:Valor>
+                </ns3:Impuesto>
+            </ns3:Impuestos>
+            <ns3:PrecioTotalSinImpuesto>103.5</ns3:PrecioTotalSinImpuesto>
+            <ns3:PrecioUnitario>103.5</ns3:PrecioUnitario>
+        </ns3:Detalle>
+        <ns3:Detalle>
+            <ns3:Cantidad>1.0</ns3:Cantidad>
+            <ns3:CodigoAuxiliar>V-TV-01</ns3:CodigoAuxiliar>
+            <ns3:CodigoPrincipal>MANTA</ns3:CodigoPrincipal>
+            <ns3:Descripcion>LIQUIDACION POR EL SERVICIO DE TRANSPORTE DE VALORES DEL 26 DE OCTUBRE AL 25 DE NOVIEMBRE 2014</ns3:Descripcion>
+            <ns3:Descuento>0.0</ns3:Descuento>
+            <ns3:Impuestos>
+                <ns3:Impuesto>
+                    <ns3:BaseImponible>221.69</ns3:BaseImponible>
+                    <ns3:Codigo>2</ns3:Codigo>
+                    <ns3:CodigoPorcentaje>2</ns3:CodigoPorcentaje>
+                    <ns3:Tarifa>12</ns3:Tarifa>
+                    <ns3:Valor>26.6</ns3:Valor>
+                </ns3:Impuesto>
+            </ns3:Impuestos>
+            <ns3:PrecioTotalSinImpuesto>221.69</ns3:PrecioTotalSinImpuesto>
+            <ns3:PrecioUnitario>221.69</ns3:PrecioUnitario>
+        </ns3:Detalle>
+        <ns3:Detalle>
+            <ns3:Cantidad>1.0</ns3:Cantidad>
+            <ns3:CodigoAuxiliar>V-TV-01</ns3:CodigoAuxiliar>
+            <ns3:CodigoPrincipal>MACHALA</ns3:CodigoPrincipal>
+            <ns3:Descripcion>LIQUIDACION POR EL SERVICIO DE TRANSPORTE DE VALORES DEL 26 DE OCTUBRE AL 25 DE NOVIEMBRE 2014</ns3:Descripcion>
+            <ns3:Descuento>0.0</ns3:Descuento>
+            <ns3:Impuestos>
+                <ns3:Impuesto>
+                    <ns3:BaseImponible>246.37</ns3:BaseImponible>
+                    <ns3:Codigo>2</ns3:Codigo>
+                    <ns3:CodigoPorcentaje>2</ns3:CodigoPorcentaje>
+                    <ns3:Tarifa>12</ns3:Tarifa>
+                    <ns3:Valor>29.56</ns3:Valor>
+                </ns3:Impuesto>
+            </ns3:Impuestos>
+            <ns3:PrecioTotalSinImpuesto>246.37</ns3:PrecioTotalSinImpuesto>
+            <ns3:PrecioUnitario>246.37</ns3:PrecioUnitario>
+        </ns3:Detalle>
+        <ns3:Detalle>
+            <ns3:Cantidad>1.0</ns3:Cantidad>
+            <ns3:CodigoAuxiliar>V-TV-01</ns3:CodigoAuxiliar>
+            <ns3:CodigoPrincipal>BABAHOYO</ns3:CodigoPrincipal>
+            <ns3:Descripcion>LIQUIDACION POR EL SERVICIO DE TRANSPORTE DE VALORES DEL 26 DE OCTUBRE AL 25 DE NOVIEMBRE 2014</ns3:Descripcion>
+            <ns3:Descuento>0.0</ns3:Descuento>
+            <ns3:Impuestos>
+                <ns3:Impuesto>
+                    <ns3:BaseImponible>281.77</ns3:BaseImponible>
+                    <ns3:Codigo>2</ns3:Codigo>
+                    <ns3:CodigoPorcentaje>2</ns3:CodigoPorcentaje>
+                    <ns3:Tarifa>12</ns3:Tarifa>
+                    <ns3:Valor>33.81</ns3:Valor>
+                </ns3:Impuesto>
+            </ns3:Impuestos>
+            <ns3:PrecioTotalSinImpuesto>281.77</ns3:PrecioTotalSinImpuesto>
+            <ns3:PrecioUnitario>281.77</ns3:PrecioUnitario>
+        </ns3:Detalle>
+        <ns3:Detalle>
+            <ns3:Cantidad>1.0</ns3:Cantidad>
+            <ns3:CodigoAuxiliar>V-TV-01</ns3:CodigoAuxiliar>
+            <ns3:CodigoPrincipal>QUEVEDO</ns3:CodigoPrincipal>
+            <ns3:Descripcion>LIQUIDACION POR EL SERVICIO DE TRANSPORTE DE VALORES DEL 26 DE OCTUBRE AL 25 DE NOVIEMBRE 2014</ns3:Descripcion>
+            <ns3:Descuento>0.0</ns3:Descuento>
+            <ns3:Impuestos>
+                <ns3:Impuesto>
+                    <ns3:BaseImponible>289.53</ns3:BaseImponible>
+                    <ns3:Codigo>2</ns3:Codigo>
+                    <ns3:CodigoPorcentaje>2</ns3:CodigoPorcentaje>
+                    <ns3:Tarifa>12</ns3:Tarifa>
+                    <ns3:Valor>34.74</ns3:Valor>
+                </ns3:Impuesto>
+            </ns3:Impuestos>
+            <ns3:PrecioTotalSinImpuesto>289.53</ns3:PrecioTotalSinImpuesto>
+            <ns3:PrecioUnitario>289.53</ns3:PrecioUnitario>
+        </ns3:Detalle>
+        <ns3:Detalle>
+            <ns3:Cantidad>1.0</ns3:Cantidad>
+            <ns3:CodigoAuxiliar>V-TV-01</ns3:CodigoAuxiliar>
+            <ns3:CodigoPrincipal>RIOBAMBA</ns3:CodigoPrincipal>
+            <ns3:Descripcion>LIQUIDACION POR EL SERVICIO DE TRANSPORTE DE VALORES DEL 26 DE OCTUBRE AL 25 DE NOVIEMBRE 2014</ns3:Descripcion>
+            <ns3:Descuento>0.0</ns3:Descuento>
+            <ns3:Impuestos>
+                <ns3:Impuesto>
+                    <ns3:BaseImponible>330.75</ns3:BaseImponible>
+                    <ns3:Codigo>2</ns3:Codigo>
+                    <ns3:CodigoPorcentaje>2</ns3:CodigoPorcentaje>
+                    <ns3:Tarifa>12</ns3:Tarifa>
+                    <ns3:Valor>39.69</ns3:Valor>
+                </ns3:Impuesto>
+            </ns3:Impuestos>
+            <ns3:PrecioTotalSinImpuesto>330.75</ns3:PrecioTotalSinImpuesto>
+            <ns3:PrecioUnitario>330.75</ns3:PrecioUnitario>
+        </ns3:Detalle>
+        <ns3:Detalle>
+            <ns3:Cantidad>1.0</ns3:Cantidad>
+            <ns3:CodigoAuxiliar>V-TV-01</ns3:CodigoAuxiliar>
+            <ns3:CodigoPrincipal>OTRAS SUCURSALES</ns3:CodigoPrincipal>
+            <ns3:Descripcion>LIQUIDACION POR EL SERVICIO DE TRANSPORTE DE VALORES DEL 26 DE OCTUBRE AL 25 DE NOVIEMBRE 2014</ns3:Descripcion>
+            <ns3:Descuento>0.0</ns3:Descuento>
+            <ns3:Impuestos>
+                <ns3:Impuesto>
+                    <ns3:BaseImponible>338.79</ns3:BaseImponible>
+                    <ns3:Codigo>2</ns3:Codigo>
+                    <ns3:CodigoPorcentaje>2</ns3:CodigoPorcentaje>
+                    <ns3:Tarifa>12</ns3:Tarifa>
+                    <ns3:Valor>40.65</ns3:Valor>
+                </ns3:Impuesto>
+            </ns3:Impuestos>
+            <ns3:PrecioTotalSinImpuesto>338.79</ns3:PrecioTotalSinImpuesto>
+            <ns3:PrecioUnitario>338.79</ns3:PrecioUnitario>
+        </ns3:Detalle>
+        <ns3:Detalle>
+            <ns3:Cantidad>1.0</ns3:Cantidad>
+            <ns3:CodigoAuxiliar>V-TV-01</ns3:CodigoAuxiliar>
+            <ns3:CodigoPrincipal>AMBATO</ns3:CodigoPrincipal>
+            <ns3:Descripcion>LIQUIDACION POR EL SERVICIO DE TRANSPORTE DE VALORES DEL 26 DE OCTUBRE AL 25 DE NOVIEMBRE 2014</ns3:Descripcion>
+            <ns3:Descuento>0.0</ns3:Descuento>
+            <ns3:Impuestos>
+                <ns3:Impuesto>
+                    <ns3:BaseImponible>401.83</ns3:BaseImponible>
+                    <ns3:Codigo>2</ns3:Codigo>
+                    <ns3:CodigoPorcentaje>2</ns3:CodigoPorcentaje>
+                    <ns3:Tarifa>12</ns3:Tarifa>
+                    <ns3:Valor>48.22</ns3:Valor>
+                </ns3:Impuesto>
+            </ns3:Impuestos>
+            <ns3:PrecioTotalSinImpuesto>401.83</ns3:PrecioTotalSinImpuesto>
+            <ns3:PrecioUnitario>401.83</ns3:PrecioUnitario>
+        </ns3:Detalle>
+        <ns3:Detalle>
+            <ns3:Cantidad>1.0</ns3:Cantidad>
+            <ns3:CodigoAuxiliar>V-TV-01</ns3:CodigoAuxiliar>
+            <ns3:CodigoPrincipal>STO DGO</ns3:CodigoPrincipal>
+            <ns3:Descripcion>LIQUIDACION POR EL SERVICIO DE TRANSPORTE DE VALORES DEL 26 DE OCTUBRE AL 25 DE NOVIEMBRE 2014</ns3:Descripcion>
+            <ns3:Descuento>0.0</ns3:Descuento>
+            <ns3:Impuestos>
+                <ns3:Impuesto>
+                    <ns3:BaseImponible>425.29</ns3:BaseImponible>
+                    <ns3:Codigo>2</ns3:Codigo>
+                    <ns3:CodigoPorcentaje>2</ns3:CodigoPorcentaje>
+                    <ns3:Tarifa>12</ns3:Tarifa>
+                    <ns3:Valor>51.03</ns3:Valor>
+                </ns3:Impuesto>
+            </ns3:Impuestos>
+            <ns3:PrecioTotalSinImpuesto>425.29</ns3:PrecioTotalSinImpuesto>
+            <ns3:PrecioUnitario>425.29</ns3:PrecioUnitario>
+        </ns3:Detalle>
+        <ns3:Detalle>
+            <ns3:Cantidad>1.0</ns3:Cantidad>
+            <ns3:CodigoAuxiliar>V-TV-01</ns3:CodigoAuxiliar>
+            <ns3:CodigoPrincipal>PORTOVIEJO</ns3:CodigoPrincipal>
+            <ns3:Descripcion>LIQUIDACION POR EL SERVICIO DE TRANSPORTE DE VALORES DEL 26 DE OCTUBRE AL 25 DE NOVIEMBRE 2014</ns3:Descripcion>
+            <ns3:Descuento>0.0</ns3:Descuento>
+            <ns3:Impuestos>
+                <ns3:Impuesto>
+                    <ns3:BaseImponible>685.31</ns3:BaseImponible>
+                    <ns3:Codigo>2</ns3:Codigo>
+                    <ns3:CodigoPorcentaje>2</ns3:CodigoPorcentaje>
+                    <ns3:Tarifa>12</ns3:Tarifa>
+                    <ns3:Valor>82.24</ns3:Valor>
+                </ns3:Impuesto>
+            </ns3:Impuestos>
+            <ns3:PrecioTotalSinImpuesto>685.31</ns3:PrecioTotalSinImpuesto>
+            <ns3:PrecioUnitario>685.31</ns3:PrecioUnitario>
+        </ns3:Detalle>
+        <ns3:Detalle>
+            <ns3:Cantidad>1.0</ns3:Cantidad>
+            <ns3:CodigoAuxiliar>V-TV-01</ns3:CodigoAuxiliar>
+            <ns3:CodigoPrincipal>IBARRA</ns3:CodigoPrincipal>
+            <ns3:Descripcion>LIQUIDACION POR EL SERVICIO DE TRANSPORTE DE VALORES DEL 26 DE OCTUBRE AL 25 DE NOVIEMBRE 2014</ns3:Descripcion>
+            <ns3:Descuento>0.0</ns3:Descuento>
+            <ns3:Impuestos>
+                <ns3:Impuesto>
+                    <ns3:BaseImponible>2077.83</ns3:BaseImponible>
+                    <ns3:Codigo>2</ns3:Codigo>
+                    <ns3:CodigoPorcentaje>2</ns3:CodigoPorcentaje>
+                    <ns3:Tarifa>12</ns3:Tarifa>
+                    <ns3:Valor>249.34</ns3:Valor>
+                </ns3:Impuesto>
+            </ns3:Impuestos>
+            <ns3:PrecioTotalSinImpuesto>2077.83</ns3:PrecioTotalSinImpuesto>
+            <ns3:PrecioUnitario>2077.83</ns3:PrecioUnitario>
+        </ns3:Detalle>
+        <ns3:Detalle>
+            <ns3:Cantidad>1.0</ns3:Cantidad>
+            <ns3:CodigoAuxiliar>V-TV-01</ns3:CodigoAuxiliar>
+            <ns3:CodigoPrincipal>GUAYAQUIL</ns3:CodigoPrincipal>
+            <ns3:Descripcion>LIQUIDACION POR EL SERVICIO DE TRANSPORTE DE VALORES DEL 26 DE OCTUBRE AL 25 DE NOVIEMBRE 2014</ns3:Descripcion>
+            <ns3:Descuento>0.0</ns3:Descuento>
+            <ns3:Impuestos>
+                <ns3:Impuesto>
+                    <ns3:BaseImponible>5573.26</ns3:BaseImponible>
+                    <ns3:Codigo>2</ns3:Codigo>
+                    <ns3:CodigoPorcentaje>2</ns3:CodigoPorcentaje>
+                    <ns3:Tarifa>12</ns3:Tarifa>
+                    <ns3:Valor>668.79</ns3:Valor>
+                </ns3:Impuesto>
+            </ns3:Impuestos>
+            <ns3:PrecioTotalSinImpuesto>5573.26</ns3:PrecioTotalSinImpuesto>
+            <ns3:PrecioUnitario>5573.26</ns3:PrecioUnitario>
+        </ns3:Detalle>
+        <ns3:Detalle>
+            <ns3:Cantidad>1.0</ns3:Cantidad>
+            <ns3:CodigoAuxiliar>V-TV-01</ns3:CodigoAuxiliar>
+            <ns3:CodigoPrincipal>OTRAS SUCURSALES</ns3:CodigoPrincipal>
+            <ns3:Descripcion>LIQUIDACION POR EL SERVICIO DE TRANSPORTE DE VALORES DEL 26 DE OCTUBRE AL 25 DE NOVIEMBRE 2014</ns3:Descripcion>
+            <ns3:Descuento>0.0</ns3:Descuento>
+            <ns3:Impuestos>
+                <ns3:Impuesto>
+                    <ns3:BaseImponible>140.96</ns3:BaseImponible>
+                    <ns3:Codigo>2</ns3:Codigo>
+                    <ns3:CodigoPorcentaje>2</ns3:CodigoPorcentaje>
+                    <ns3:Tarifa>12</ns3:Tarifa>
+                    <ns3:Valor>16.92</ns3:Valor>
+                </ns3:Impuesto>
+            </ns3:Impuestos>
+            <ns3:PrecioTotalSinImpuesto>140.96</ns3:PrecioTotalSinImpuesto>
+            <ns3:PrecioUnitario>140.96</ns3:PrecioUnitario>
+        </ns3:Detalle>
+    </ns2:detalle>
+    <ns2:infoAdicional xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="ns3:ArrayOfInfoAdicional">
+        <ns3:InfoAdicional>
+            <ns3:Nombre>OBSERVACION</ns3:Nombre>
+            <ns3:Text>LIQUIDACION POR EL SERVICIO DE TRANSPORTE DE VALORES DEL 26 DE OCTUBRE AL 25 DE NOVIEMBRE 2014</ns3:Text>
+        </ns3:InfoAdicional>
+        <ns3:InfoAdicional>
+            <ns3:Nombre>CONTACTO</ns3:Nombre>
+            <ns3:Text>AMPARO ALEMAN</ns3:Text>
+        </ns3:InfoAdicional>
+        <ns3:InfoAdicional>
+            <ns3:Nombre>DIRECCION</ns3:Nombre>
+            <ns3:Text>COREA 126 Y AV. AMAZONAS</ns3:Text>
+        </ns3:InfoAdicional>
+        <ns3:InfoAdicional>
+            <ns3:Nombre>MAILCLIENTE</ns3:Nombre>
+            <ns3:Text>nancy.gomez@kfc.com.ec</ns3:Text>
+        </ns3:InfoAdicional>
+    </ns2:infoAdicional>
+</AutorizarFactura>

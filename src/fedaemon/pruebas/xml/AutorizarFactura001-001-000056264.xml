@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<AutorizarFactura xmlns:ns2="http://tempuri.org/" xmlns:ns3="http://schemas.datacontract.org/2004/07/infact_mvc.Services">
+    <ns2:infoTributaria xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="ns3:InfoTributaria">
+        <ns3:Ambiente>1</ns3:Ambiente>
+        <ns3:CodDoc>01</ns3:CodDoc>
+        <ns3:DirMatriz>AV. DE LA PRENSA 3558 Y CARLOS V</ns3:DirMatriz>
+        <ns3:Estab>001</ns3:Estab>
+        <ns3:MailCliente></ns3:MailCliente>
+        <ns3:NombreComercial>TEVCOL PRUEBAS</ns3:NombreComercial>
+        <ns3:Origen></ns3:Origen>
+        <ns3:PtoEmi>001</ns3:PtoEmi>
+        <ns3:RazonSocial>TRANSPORTADORA ECUATORIANA DE VALORES</ns3:RazonSocial>
+        <ns3:Ruc>1790023885001</ns3:Ruc>
+        <ns3:Secuencial>000056264</ns3:Secuencial>
+        <ns3:TipoEmision>1</ns3:TipoEmision>
+    </ns2:infoTributaria>
+    <ns2:infoFactura xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="ns3:InfoFactura">
+        <ns3:ContribuyenteEspecial>3568</ns3:ContribuyenteEspecial>
+        <ns3:DirEstablecimiento>AV. DE LA PRENSA 3558 Y CARLOS V</ns3:DirEstablecimiento>
+        <ns3:FechaEmision>16/10/2014</ns3:FechaEmision>
+        <ns3:GuiaRemision>0</ns3:GuiaRemision>
+        <ns3:IdentificacionComprador>1790010937001</ns3:IdentificacionComprador>
+        <ns3:ImporteTotal>94.74</ns3:ImporteTotal>
+        <ns3:Moneda>DOLAR</ns3:Moneda>
+        <ns3:ObligadoContabilidad>SI</ns3:ObligadoContabilidad>
+        <ns3:Propina>0.0</ns3:Propina>
+        <ns3:RazonSocialComprador>BANCO PICHINCHA C.A.</ns3:RazonSocialComprador>
+        <ns3:TipoIdentificacionComprador>04</ns3:TipoIdentificacionComprador>
+        <ns3:TotalConImpuestos>
+            <ns3:TotalImpuesto>
+                <ns3:BaseImponible>84.59</ns3:BaseImponible>
+                <ns3:Codigo>2</ns3:Codigo>
+                <ns3:CodigoPorcentaje>2</ns3:CodigoPorcentaje>
+                <ns3:Tarifa>12</ns3:Tarifa>
+                <ns3:Valor>10.15</ns3:Valor>
+            </ns3:TotalImpuesto>
+        </ns3:TotalConImpuestos>
+        <ns3:TotalDescuento>0.0</ns3:TotalDescuento>
+        <ns3:TotalSinImpuestos>84.59</ns3:TotalSinImpuestos>
+    </ns2:infoFactura>
+    <ns2:detalle xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="ns3:ArrayOfDetalle">
+        <ns3:Detalle>
+            <ns3:Cantidad>1.0</ns3:Cantidad>
+            <ns3:CodigoAuxiliar>V-TV-01</ns3:CodigoAuxiliar>
+            <ns3:CodigoPrincipal>QUITO</ns3:CodigoPrincipal>
+            <ns3:Descripcion>LIQUIDACION POR SERVICIO DE TR</ns3:Descripcion>
+            <ns3:Descuento>0.0</ns3:Descuento>
+            <ns3:Impuestos>
+                <ns3:Impuesto>
+                    <ns3:BaseImponible>68.44</ns3:BaseImponible>
+                    <ns3:Codigo>2</ns3:Codigo>
+                    <ns3:CodigoPorcentaje>2</ns3:CodigoPorcentaje>
+                    <ns3:Tarifa>12</ns3:Tarifa>
+                    <ns3:Valor>8.21</ns3:Valor>
+                </ns3:Impuesto>
+            </ns3:Impuestos>
+            <ns3:PrecioTotalSinImpuesto>68.44</ns3:PrecioTotalSinImpuesto>
+            <ns3:PrecioUnitario>68.44</ns3:PrecioUnitario>
+        </ns3:Detalle>
+        <ns3:Detalle>
+            <ns3:Cantidad>1.0</ns3:Cantidad>
+            <ns3:CodigoAuxiliar>V-TV-05</ns3:CodigoAuxiliar>
+            <ns3:CodigoPrincipal>QUITO</ns3:CodigoPrincipal>
+            <ns3:Descripcion>LIQUIDACION POR SERVICIO DE TR</ns3:Descripcion>
+            <ns3:Descuento>0.0</ns3:Descuento>
+            <ns3:Impuestos>
+                <ns3:Impuesto>
+                    <ns3:BaseImponible>16.15</ns3:BaseImponible>
+                    <ns3:Codigo>2</ns3:Codigo>
+                    <ns3:CodigoPorcentaje>2</ns3:CodigoPorcentaje>
+                    <ns3:Tarifa>12</ns3:Tarifa>
+                    <ns3:Valor>1.94</ns3:Valor>
+                </ns3:Impuesto>
+            </ns3:Impuestos>
+            <ns3:PrecioTotalSinImpuesto>16.15</ns3:PrecioTotalSinImpuesto>
+            <ns3:PrecioUnitario>16.15</ns3:PrecioUnitario>
+        </ns3:Detalle>
+    </ns2:detalle>
+    <ns2:infoAdicional xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="ns3:ArrayOfInfoAdicional">
+        <ns3:InfoAdicional>
+            <ns3:Nombre>FACTU|100056264</ns3:Nombre>
+            <ns3:Text>PRUEBA</ns3:Text>
+        </ns3:InfoAdicional>
+    </ns2:infoAdicional>
+</AutorizarFactura>

@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<AutorizarFactura xmlns:ns2="http://tempuri.org/" xmlns:ns3="http://schemas.datacontract.org/2004/07/infact_mvc.Services">
+    <ns2:infoTributaria xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="ns3:InfoTributaria">
+        <ns3:Ambiente>1</ns3:Ambiente>
+        <ns3:CodDoc>01</ns3:CodDoc>
+        <ns3:DirMatriz>AV. DE LA PRENSA 3558 Y CARLOS V</ns3:DirMatriz>
+        <ns3:Estab>001</ns3:Estab>
+        <ns3:MailCliente>choeze@produbanco.ec</ns3:MailCliente>
+        <ns3:NombreComercial>TEVCOL Cia. Ltda.</ns3:NombreComercial>
+        <ns3:Origen></ns3:Origen>
+        <ns3:PtoEmi>001</ns3:PtoEmi>
+        <ns3:RazonSocial>TRANSPORTADORA ECUATORIANA DE VALORES Cia. Ltda.</ns3:RazonSocial>
+        <ns3:Ruc>1790023885001</ns3:Ruc>
+        <ns3:Secuencial>000057183</ns3:Secuencial>
+        <ns3:TipoEmision>1</ns3:TipoEmision>
+    </ns2:infoTributaria>
+    <ns2:infoFactura xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="ns3:InfoFactura">
+        <ns3:ContribuyenteEspecial>5368</ns3:ContribuyenteEspecial>
+        <ns3:DirEstablecimiento>AV. DE LA PRENSA 3558 Y CARLOS V</ns3:DirEstablecimiento>
+        <ns3:FechaEmision>08/12/2014</ns3:FechaEmision>
+        <ns3:GuiaRemision>0</ns3:GuiaRemision>
+        <ns3:IdentificacionComprador>1791398246001</ns3:IdentificacionComprador>
+        <ns3:ImporteTotal>18102.68</ns3:ImporteTotal>
+        <ns3:Moneda>DOLAR</ns3:Moneda>
+        <ns3:ObligadoContabilidad>SI</ns3:ObligadoContabilidad>
+        <ns3:Propina>0.0</ns3:Propina>
+        <ns3:RazonSocialComprador>EXTERNALIZACION DE SERVICIOS S.A. EXSERSA</ns3:RazonSocialComprador>
+        <ns3:TipoIdentificacionComprador>04</ns3:TipoIdentificacionComprador>
+        <ns3:TotalConImpuestos>
+            <ns3:TotalImpuesto>
+                <ns3:BaseImponible>16163.11</ns3:BaseImponible>
+                <ns3:Codigo>2</ns3:Codigo>
+                <ns3:CodigoPorcentaje>2</ns3:CodigoPorcentaje>
+                <ns3:Tarifa>12</ns3:Tarifa>
+                <ns3:Valor>1939.57</ns3:Valor>
+            </ns3:TotalImpuesto>
+        </ns3:TotalConImpuestos>
+        <ns3:TotalDescuento>0.0</ns3:TotalDescuento>
+        <ns3:TotalSinImpuestos>16163.11</ns3:TotalSinImpuestos>
+    </ns2:infoFactura>
+    <ns2:detalle xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="ns3:ArrayOfDetalle">
+        <ns3:Detalle>
+            <ns3:Cantidad>1.0</ns3:Cantidad>
+            <ns3:CodigoAuxiliar>V-TV-01</ns3:CodigoAuxiliar>
+            <ns3:CodigoPrincipal>ESMERALDAS</ns3:CodigoPrincipal>
+            <ns3:Descripcion>TRANSPORTE DE VALORES</ns3:Descripcion>
+            <ns3:Descuento>0.0</ns3:Descuento>
+            <ns3:Impuestos>
+                <ns3:Impuesto>
+                    <ns3:BaseImponible>43.53</ns3:BaseImponible>
+                    <ns3:Codigo>2</ns3:Codigo>
+                    <ns3:CodigoPorcentaje>2</ns3:CodigoPorcentaje>
+                    <ns3:Tarifa>12</ns3:Tarifa>
+                    <ns3:Valor>5.22</ns3:Valor>
+                </ns3:Impuesto>
+            </ns3:Impuestos>
+            <ns3:PrecioTotalSinImpuesto>43.53</ns3:PrecioTotalSinImpuesto>
+            <ns3:PrecioUnitario>43.53</ns3:PrecioUnitario>
+        </ns3:Detalle>
+        <ns3:Detalle>
+            <ns3:Cantidad>1.0</ns3:Cantidad>
+            <ns3:CodigoAuxiliar>V-TV-01</ns3:CodigoAuxiliar>
+            <ns3:CodigoPrincipal>RIOBAMBA</ns3:CodigoPrincipal>
+            <ns3:Descripcion>TRANSPORTE DE VALORES</ns3:Descripcion>
+            <ns3:Descuento>0.0</ns3:Descuento>
+            <ns3:Impuestos>
+                <ns3:Impuesto>
+                    <ns3:BaseImponible>149.22</ns3:BaseImponible>
+                    <ns3:Codigo>2</ns3:Codigo>
+                    <ns3:CodigoPorcentaje>2</ns3:CodigoPorcentaje>
+                    <ns3:Tarifa>12</ns3:Tarifa>
+                    <ns3:Valor>17.91</ns3:Valor>
+                </ns3:Impuesto>
+            </ns3:Impuestos>
+            <ns3:PrecioTotalSinImpuesto>149.22</ns3:PrecioTotalSinImpuesto>
+            <ns3:PrecioUnitario>149.22</ns3:PrecioUnitario>
+        </ns3:Detalle>
+        <ns3:Detalle>
+            <ns3:Cantidad>1.0</ns3:Cantidad>
+            <ns3:CodigoAuxiliar>V-TV-01</ns3:CodigoAuxiliar>
+            <ns3:CodigoPrincipal>GUARANDA</ns3:CodigoPrincipal>
+            <ns3:Descripcion>TRANSPORTE DE VALORES</ns3:Descripcion>
+            <ns3:Descuento>0.0</ns3:Descuento>
+            <ns3:Impuestos>
+                <ns3:Impuesto>
+                    <ns3:BaseImponible>915.5</ns3:BaseImponible>
+                    <ns3:Codigo>2</ns3:Codigo>
+                    <ns3:CodigoPorcentaje>2</ns3:CodigoPorcentaje>
+                    <ns3:Tarifa>12</ns3:Tarifa>
+                    <ns3:Valor>109.86</ns3:Valor>
+                </ns3:Impuesto>
+            </ns3:Impuestos>
+            <ns3:PrecioTotalSinImpuesto>915.5</ns3:PrecioTotalSinImpuesto>
+            <ns3:PrecioUnitario>915.5</ns3:PrecioUnitario>
+        </ns3:Detalle>
+        <ns3:Detalle>
+            <ns3:Cantidad>1.0</ns3:Cantidad>
+            <ns3:CodigoAuxiliar>V-TV-01</ns3:CodigoAuxiliar>
+            <ns3:CodigoPrincipal>AMBATO</ns3:CodigoPrincipal>
+            <ns3:Descripcion>TRANSPORTE DE VALORES</ns3:Descripcion>
+            <ns3:Descuento>0.0</ns3:Descuento>
+            <ns3:Impuestos>
+                <ns3:Impuesto>
+                    <ns3:BaseImponible>1026.54</ns3:BaseImponible>
+                    <ns3:Codigo>2</ns3:Codigo>
+                    <ns3:CodigoPorcentaje>2</ns3:CodigoPorcentaje>
+                    <ns3:Tarifa>12</ns3:Tarifa>
+                    <ns3:Valor>123.18</ns3:Valor>
+                </ns3:Impuesto>
+            </ns3:Impuestos>
+            <ns3:PrecioTotalSinImpuesto>1026.54</ns3:PrecioTotalSinImpuesto>
+            <ns3:PrecioUnitario>1026.54</ns3:PrecioUnitario>
+        </ns3:Detalle>
+        <ns3:Detalle>
+            <ns3:Cantidad>1.0</ns3:Cantidad>
+            <ns3:CodigoAuxiliar>V-TV-01</ns3:CodigoAuxiliar>
+            <ns3:CodigoPrincipal>QUEVEDO</ns3:CodigoPrincipal>
+            <ns3:Descripcion>TRANSPORTE DE VALORES</ns3:Descripcion>
+            <ns3:Descuento>0.0</ns3:Descuento>
+            <ns3:Impuestos>
+                <ns3:Impuesto>
+                    <ns3:BaseImponible>1179.97</ns3:BaseImponible>
+                    <ns3:Codigo>2</ns3:Codigo>
+                    <ns3:CodigoPorcentaje>2</ns3:CodigoPorcentaje>
+                    <ns3:Tarifa>12</ns3:Tarifa>
+                    <ns3:Valor>141.6</ns3:Valor>
+                </ns3:Impuesto>
+            </ns3:Impuestos>
+            <ns3:PrecioTotalSinImpuesto>1179.97</ns3:PrecioTotalSinImpuesto>
+            <ns3:PrecioUnitario>1179.97</ns3:PrecioUnitario>
+        </ns3:Detalle>
+        <ns3:Detalle>
+            <ns3:Cantidad>1.0</ns3:Cantidad>
+            <ns3:CodigoAuxiliar>V-TV-01</ns3:CodigoAuxiliar>
+            <ns3:CodigoPrincipal>QUITO</ns3:CodigoPrincipal>
+            <ns3:Descripcion>TRANSPORTE DE VALORES</ns3:Descripcion>
+            <ns3:Descuento>0.0</ns3:Descuento>
+            <ns3:Impuestos>
+                <ns3:Impuesto>
+                    <ns3:BaseImponible>1339.37</ns3:BaseImponible>
+                    <ns3:Codigo>2</ns3:Codigo>
+                    <ns3:CodigoPorcentaje>2</ns3:CodigoPorcentaje>
+                    <ns3:Tarifa>12</ns3:Tarifa>
+                    <ns3:Valor>160.72</ns3:Valor>
+                </ns3:Impuesto>
+            </ns3:Impuestos>
+            <ns3:PrecioTotalSinImpuesto>1339.37</ns3:PrecioTotalSinImpuesto>
+            <ns3:PrecioUnitario>1339.37</ns3:PrecioUnitario>
+        </ns3:Detalle>
+        <ns3:Detalle>
+            <ns3:Cantidad>1.0</ns3:Cantidad>
+            <ns3:CodigoAuxiliar>V-TV-01</ns3:CodigoAuxiliar>
+            <ns3:CodigoPrincipal>IBARRA</ns3:CodigoPrincipal>
+            <ns3:Descripcion>TRANSPORTE DE VALORES</ns3:Descripcion>
+            <ns3:Descuento>0.0</ns3:Descuento>
+            <ns3:Impuestos>
+                <ns3:Impuesto>
+                    <ns3:BaseImponible>1700.64</ns3:BaseImponible>
+                    <ns3:Codigo>2</ns3:Codigo>
+                    <ns3:CodigoPorcentaje>2</ns3:CodigoPorcentaje>
+                    <ns3:Tarifa>12</ns3:Tarifa>
+                    <ns3:Valor>204.08</ns3:Valor>
+                </ns3:Impuesto>
+            </ns3:Impuestos>
+            <ns3:PrecioTotalSinImpuesto>1700.64</ns3:PrecioTotalSinImpuesto>
+            <ns3:PrecioUnitario>1700.64</ns3:PrecioUnitario>
+        </ns3:Detalle>
+        <ns3:Detalle>
+            <ns3:Cantidad>1.0</ns3:Cantidad>
+            <ns3:CodigoAuxiliar>V-TV-01</ns3:CodigoAuxiliar>
+            <ns3:CodigoPrincipal>PORTOVIEJO</ns3:CodigoPrincipal>
+            <ns3:Descripcion>TRANSPORTE DE VALORES</ns3:Descripcion>
+            <ns3:Descuento>0.0</ns3:Descuento>
+            <ns3:Impuestos>
+                <ns3:Impuesto>
+                    <ns3:BaseImponible>2429.65</ns3:BaseImponible>
+                    <ns3:Codigo>2</ns3:Codigo>
+                    <ns3:CodigoPorcentaje>2</ns3:CodigoPorcentaje>
+                    <ns3:Tarifa>12</ns3:Tarifa>
+                    <ns3:Valor>291.56</ns3:Valor>
+                </ns3:Impuesto>
+            </ns3:Impuestos>
+            <ns3:PrecioTotalSinImpuesto>2429.65</ns3:PrecioTotalSinImpuesto>
+            <ns3:PrecioUnitario>2429.65</ns3:PrecioUnitario>
+        </ns3:Detalle>
+        <ns3:Detalle>
+            <ns3:Cantidad>1.0</ns3:Cantidad>
+            <ns3:CodigoAuxiliar>V-TV-01</ns3:CodigoAuxiliar>
+            <ns3:CodigoPrincipal>GUAYAQUIL</ns3:CodigoPrincipal>
+            <ns3:Descripcion>TRANSPORTE DE VALORES</ns3:Descripcion>
+            <ns3:Descuento>0.0</ns3:Descuento>
+            <ns3:Impuestos>
+                <ns3:Impuesto>
+                    <ns3:BaseImponible>4359.99</ns3:BaseImponible>
+                    <ns3:Codigo>2</ns3:Codigo>
+                    <ns3:CodigoPorcentaje>2</ns3:CodigoPorcentaje>
+                    <ns3:Tarifa>12</ns3:Tarifa>
+                    <ns3:Valor>523.2</ns3:Valor>
+                </ns3:Impuesto>
+            </ns3:Impuestos>
+            <ns3:PrecioTotalSinImpuesto>4359.99</ns3:PrecioTotalSinImpuesto>
+            <ns3:PrecioUnitario>4359.99</ns3:PrecioUnitario>
+        </ns3:Detalle>
+        <ns3:Detalle>
+            <ns3:Cantidad>1.0</ns3:Cantidad>
+            <ns3:CodigoAuxiliar>V-TV-01</ns3:CodigoAuxiliar>
+            <ns3:CodigoPrincipal>BABAHOYO</ns3:CodigoPrincipal>
+            <ns3:Descripcion>TRANSPORTE DE VALORES</ns3:Descripcion>
+            <ns3:Descuento>0.0</ns3:Descuento>
+            <ns3:Impuestos>
+                <ns3:Impuesto>
+                    <ns3:BaseImponible>902.49</ns3:BaseImponible>
+                    <ns3:Codigo>2</ns3:Codigo>
+                    <ns3:CodigoPorcentaje>2</ns3:CodigoPorcentaje>
+                    <ns3:Tarifa>12</ns3:Tarifa>
+                    <ns3:Valor>108.3</ns3:Valor>
+                </ns3:Impuesto>
+            </ns3:Impuestos>
+            <ns3:PrecioTotalSinImpuesto>902.49</ns3:PrecioTotalSinImpuesto>
+            <ns3:PrecioUnitario>902.49</ns3:PrecioUnitario>
+        </ns3:Detalle>
+        <ns3:Detalle>
+            <ns3:Cantidad>1.0</ns3:Cantidad>
+            <ns3:CodigoAuxiliar>V-TV-01</ns3:CodigoAuxiliar>
+            <ns3:CodigoPrincipal>LATACUNGA</ns3:CodigoPrincipal>
+            <ns3:Descripcion>TRANSPORTE DE VALORES</ns3:Descripcion>
+            <ns3:Descuento>0.0</ns3:Descuento>
+            <ns3:Impuestos>
+                <ns3:Impuesto>
+                    <ns3:BaseImponible>284.79</ns3:BaseImponible>
+                    <ns3:Codigo>2</ns3:Codigo>
+                    <ns3:CodigoPorcentaje>2</ns3:CodigoPorcentaje>
+                    <ns3:Tarifa>12</ns3:Tarifa>
+                    <ns3:Valor>34.17</ns3:Valor>
+                </ns3:Impuesto>
+            </ns3:Impuestos>
+            <ns3:PrecioTotalSinImpuesto>284.79</ns3:PrecioTotalSinImpuesto>
+            <ns3:PrecioUnitario>284.79</ns3:PrecioUnitario>
+        </ns3:Detalle>
+        <ns3:Detalle>
+            <ns3:Cantidad>1.0</ns3:Cantidad>
+            <ns3:CodigoAuxiliar>V-TV-01</ns3:CodigoAuxiliar>
+            <ns3:CodigoPrincipal>SALINAS</ns3:CodigoPrincipal>
+            <ns3:Descripcion>TRANSPORTE DE VALORES</ns3:Descripcion>
+            <ns3:Descuento>0.0</ns3:Descuento>
+            <ns3:Impuestos>
+                <ns3:Impuesto>
+                    <ns3:BaseImponible>321.36</ns3:BaseImponible>
+                    <ns3:Codigo>2</ns3:Codigo>
+                    <ns3:CodigoPorcentaje>2</ns3:CodigoPorcentaje>
+                    <ns3:Tarifa>12</ns3:Tarifa>
+                    <ns3:Valor>38.56</ns3:Valor>
+                </ns3:Impuesto>
+            </ns3:Impuestos>
+            <ns3:PrecioTotalSinImpuesto>321.36</ns3:PrecioTotalSinImpuesto>
+            <ns3:PrecioUnitario>321.36</ns3:PrecioUnitario>
+        </ns3:Detalle>
+        <ns3:Detalle>
+            <ns3:Cantidad>1.0</ns3:Cantidad>
+            <ns3:CodigoAuxiliar>V-TV-01</ns3:CodigoAuxiliar>
+            <ns3:CodigoPrincipal>STO DGO</ns3:CodigoPrincipal>
+            <ns3:Descripcion>TRANSPORTE DE VALORES</ns3:Descripcion>
+            <ns3:Descuento>0.0</ns3:Descuento>
+            <ns3:Impuestos>
+                <ns3:Impuesto>
+                    <ns3:BaseImponible>670.3</ns3:BaseImponible>
+                    <ns3:Codigo>2</ns3:Codigo>
+                    <ns3:CodigoPorcentaje>2</ns3:CodigoPorcentaje>
+                    <ns3:Tarifa>12</ns3:Tarifa>
+                    <ns3:Valor>80.44</ns3:Valor>
+                </ns3:Impuesto>
+            </ns3:Impuestos>
+            <ns3:PrecioTotalSinImpuesto>670.3</ns3:PrecioTotalSinImpuesto>
+            <ns3:PrecioUnitario>670.3</ns3:PrecioUnitario>
+        </ns3:Detalle>
+        <ns3:Detalle>
+            <ns3:Cantidad>1.0</ns3:Cantidad>
+            <ns3:CodigoAuxiliar>V-TV-01</ns3:CodigoAuxiliar>
+            <ns3:CodigoPrincipal>MACHALA</ns3:CodigoPrincipal>
+            <ns3:Descripcion>TRANSPORTE DE VALORES</ns3:Descripcion>
+            <ns3:Descuento>0.0</ns3:Descuento>
+            <ns3:Impuestos>
+                <ns3:Impuesto>
+                    <ns3:BaseImponible>839.76</ns3:BaseImponible>
+                    <ns3:Codigo>2</ns3:Codigo>
+                    <ns3:CodigoPorcentaje>2</ns3:CodigoPorcentaje>
+                    <ns3:Tarifa>12</ns3:Tarifa>
+                    <ns3:Valor>100.77</ns3:Valor>
+                </ns3:Impuesto>
+            </ns3:Impuestos>
+            <ns3:PrecioTotalSinImpuesto>839.76</ns3:PrecioTotalSinImpuesto>
+            <ns3:PrecioUnitario>839.76</ns3:PrecioUnitario>
+        </ns3:Detalle>
+    </ns2:detalle>
+    <ns2:infoAdicional xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="ns3:ArrayOfInfoAdicional">
+        <ns3:InfoAdicional>
+            <ns3:Nombre>OBSERVACION</ns3:Nombre>
+            <ns3:Text>LIQUIDACION POR SERVICIO DE TRANSPORTE DE 
+ VALORES, POR EL MES DE NOV.2014</ns3:Text>
+        </ns3:InfoAdicional>
+        <ns3:InfoAdicional>
+            <ns3:Nombre>CONTACTO</ns3:Nombre>
+            <ns3:Text>RICARDO CARRILLO</ns3:Text>
+        </ns3:InfoAdicional>
+        <ns3:InfoAdicional>
+            <ns3:Nombre>DIRECCION</ns3:Nombre>
+            <ns3:Text>PSJE. LOS ANGELES E3-19 Y AV. ELOY ALFARO</ns3:Text>
+        </ns3:InfoAdicional>
+        <ns3:InfoAdicional>
+            <ns3:Nombre>EMAIL</ns3:Nombre>
+            <ns3:Text>choeze@produbanco.ec</ns3:Text>
+        </ns3:InfoAdicional>
+        <ns3:InfoAdicional>
+            <ns3:Nombre>FONO</ns3:Nombre>
+            <ns3:Text>2233-677</ns3:Text>
+        </ns3:InfoAdicional>
+    </ns2:infoAdicional>
+</AutorizarFactura>

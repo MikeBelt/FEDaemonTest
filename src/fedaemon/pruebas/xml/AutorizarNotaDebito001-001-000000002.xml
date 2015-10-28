@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<AutorizarNotaDebito xmlns:ns2="http://tempuri.org/" xmlns:ns3="http://schemas.datacontract.org/2004/07/infact_mvc.Services">
+    <ns2:infoTributaria xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="ns3:InfoTributaria">
+        <ns3:Ambiente>0</ns3:Ambiente>
+        <ns3:CodDoc xsi:nil="true"/>
+        <ns3:DirMatriz xsi:nil="true"/>
+        <ns3:Estab xsi:nil="true"/>
+        <ns3:MailCliente xsi:nil="true"/>
+        <ns3:NombreComercial xsi:nil="true"/>
+        <ns3:Origen xsi:nil="true"/>
+        <ns3:PtoEmi xsi:nil="true"/>
+        <ns3:RazonSocial xsi:nil="true"/>
+        <ns3:Ruc xsi:nil="true"/>
+        <ns3:Secuencial xsi:nil="true"/>
+        <ns3:TipoEmision>0</ns3:TipoEmision>
+    </ns2:infoTributaria>
+    <ns2:infoNotaDebito xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="ns3:InfoNotaDebito">
+        <ns3:CodDocModificado xsi:nil="true"/>
+        <ns3:FechaEmision xsi:nil="true"/>
+        <ns3:FechaEmisionDocSustento xsi:nil="true"/>
+        <ns3:IdentificacionComprador xsi:nil="true"/>
+        <ns3:Impuestos xsi:nil="true"/>
+        <ns3:NumDocModificado xsi:nil="true"/>
+        <ns3:RazonSocialComprador xsi:nil="true"/>
+        <ns3:TipoIdentificacionComprador xsi:nil="true"/>
+    </ns2:infoNotaDebito>
+    <ns2:motivos xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="ns3:ArrayOfMotivo"/>
+    <ns2:infoAdicional xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="ns3:ArrayOfInfoAdicional"/>
+</AutorizarNotaDebito>
