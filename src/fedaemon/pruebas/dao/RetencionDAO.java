@@ -231,6 +231,7 @@ public final class RetencionDAO {
                             
                             InfoAdicional info_a2=new InfoAdicional();
                             nombre=factory.createInfoAdicionalNombre("CONTACTO");
+                            info_a2.setNombre(nombre);
                             String contacto=rs.getString("CONTACTO")==null?"NO REGISTRADO":rs.getString("CONTACTO").toUpperCase().trim();
                             if(contacto!=null)
                             {
