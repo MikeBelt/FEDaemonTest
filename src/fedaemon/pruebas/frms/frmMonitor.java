@@ -27,7 +27,7 @@ public final class frmMonitor extends javax.swing.JFrame {
     public frmMonitor() {
         initComponents();
         this.setExtendedState(frmMonitor.MAXIMIZED_BOTH);
-        this.setDefaultCloseOperation(frmMonitor.EXIT_ON_CLOSE);
+        this.setDefaultCloseOperation(0);
 
     }
     
@@ -157,6 +157,7 @@ public final class frmMonitor extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Autorización de Documentos Electrónicos FEDaemonTEVCOL");
+        setUndecorated(true);
         addWindowListener(new java.awt.event.WindowAdapter() {
             public void windowClosed(java.awt.event.WindowEvent evt) {
                 formWindowClosed(evt);
