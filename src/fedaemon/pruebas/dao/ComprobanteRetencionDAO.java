@@ -340,7 +340,10 @@ public final class ComprobanteRetencionDAO {
             stop = 0;
             respuesta=null;
              //Enviar documento empaquetado al webservice de SRI para autorizar
-            for(int i=0;i<arrayAutorizaComprobante.size();i++){   
+            for(int i=0;i<arrayAutorizaComprobante.size();i++){
+                System.out.println("[info] - Registro #"+(i+1)+ " de "+arrayAutorizaComprobante.size());
+                this.frmMonitor.setMensajeRetenciones("[info] - Registro #"+(i+1)+ " de "+arrayAutorizaComprobante.size());
+            
                 System.out.println("[info] - Enviando petición de autorización al WS...");
                 this.frmMonitor.setMensajeRetenciones("[info] - Enviando petición de autorización al WS...");
                 //obteniendo el tiempo inicial para el tiempo de espera estimado
@@ -427,7 +430,7 @@ public final class ComprobanteRetencionDAO {
         jaxb_context=JAXBContext.newInstance(AutorizarComprobanteRetencion.class);
         m=jaxb_context.createMarshaller();
         m.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT,true);
-        rutaXml=this.frmMonitor.getServicio().getDirectorioNotasDebito()+"AutorizarComprobanteRetencion"+estab+"-"+ptoEmi+"-"+secuencial+".xml";
+        rutaXml=this.frmMonitor.getServicio().getDirectorioRetenciones()+"AutorizarComprobanteRetencion"+estab+"-"+ptoEmi+"-"+secuencial+".xml";
         m.marshal(jaxb_autoriza, new File (rutaXml));
 
         System.out.println("[info] - xml generado "+rutaXml);  

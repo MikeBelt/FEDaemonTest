@@ -151,7 +151,7 @@ public final class FacturaDAO {
         long start = 0;
         long stop = 0;
         Response respuesta=null;
-        Response respuesta2=null;
+        
         
         try{
         factory = new ObjectFactory();
@@ -410,13 +410,16 @@ public final class FacturaDAO {
             
             
             arrayAutorizarFactura.add(autorizar);
-            }//final del for
+            }//final del for de empaquetado
             
             start = 0;
             stop = 0;
             respuesta=null;
             //Enviar documento empaquetado al webservice de SRI para autorizar
             for(int i=0;i<arrayAutorizarFactura.size();i++){
+                System.out.println("[info] - Registro #"+(i+1)+ " de "+arrayAutorizarFactura.size());
+                this.frmMonitor.setMensajeFacturas("[info] - Registro #"+(i+1)+ " de "+arrayAutorizarFactura.size());
+            
                 System.out.println("[info] - No. Lineas : "+arrayInfoDoc.get(i).getLineas());
                 this.frmMonitor.setMensajeFacturas("[info] - No. Lineas : "+arrayInfoDoc.get(i).getLineas());
                 System.out.println("[info] - Enviando petición de autorización al WS...");

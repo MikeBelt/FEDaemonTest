@@ -37,7 +37,7 @@ public final class FEDaemon {
         
         servicioTevcol=new Servicio();
         servicioTevcol.setAmbiente("1");
-        servicioTevcol.setVersion("2015.09.28");
+        servicioTevcol.setVersion("2015.10.29");
         servicioTevcol.setSo(System.getProperty("os.name"));
         servicioTevcol.setArquitectura(System.getProperty("os.arch"));
         servicioTevcol.setPid(pid());
@@ -61,7 +61,7 @@ public final class FEDaemon {
         
         servicioTevsur=new Servicio();
         servicioTevsur.setAmbiente("1");
-        servicioTevsur.setVersion("2015.09.28");
+        servicioTevsur.setVersion("2015.10.29");
         servicioTevsur.setSo(System.getProperty("os.name"));
         servicioTevsur.setArquitectura(System.getProperty("os.arch"));
         servicioTevsur.setPid(pid());
