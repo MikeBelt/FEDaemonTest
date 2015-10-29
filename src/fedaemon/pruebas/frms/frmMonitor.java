@@ -156,7 +156,7 @@ public final class frmMonitor extends javax.swing.JFrame {
         jTextArea4 = new javax.swing.JTextArea();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setTitle("Autorización de Documentos Electrónicos FEDaemonTEVCOL");
+        setTitle("Autorización de Documentos Electrónicos FEDaemonTest");
         setUndecorated(true);
         addWindowListener(new java.awt.event.WindowAdapter() {
             public void windowClosed(java.awt.event.WindowEvent evt) {
