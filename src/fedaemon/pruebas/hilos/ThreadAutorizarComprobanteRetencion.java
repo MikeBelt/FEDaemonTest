@@ -2,7 +2,7 @@
 package fedaemon.pruebas.hilos;
 
 import fedaemon.pruebas.util.ConexionBD;
-import fedaemon.pruebas.dao.ComprobanteRetencionDAO;
+import fedaemon.pruebas.dao.RetencionDAO;
 import fedaemon.pruebas.frms.frmMonitor;
 import java.sql.SQLException;
 
@@ -14,7 +14,7 @@ public final class ThreadAutorizarComprobanteRetencion extends Thread{
     
     protected ConexionBD conexionBD;
     protected frmMonitor frmMonitor;
-    public ComprobanteRetencionDAO retencionDAO;
+    public RetencionDAO retencionDAO;
     
     @Override
     public void run(){
@@ -23,7 +23,7 @@ public final class ThreadAutorizarComprobanteRetencion extends Thread{
        int contar=0;
        long minutos=0;
        ConexionBD con=new ConexionBD(conexionBD.getUsr(),conexionBD.getPass(),conexionBD.getServer(),conexionBD.getBase(),conexionBD.isSid(),conexionBD.isServiceName());
-       retencionDAO=new ComprobanteRetencionDAO();
+       retencionDAO=new RetencionDAO();
        retencionDAO.setMonitor(frmMonitor);
     
         System.out.println("[info] - Iniciando hilo para autorización de Retenciones... ");

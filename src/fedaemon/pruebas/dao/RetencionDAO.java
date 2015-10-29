@@ -38,7 +38,7 @@ import javax.xml.namespace.QName;
  *
  * @author Michael Beltrán
  */
-public final class ComprobanteRetencionDAO {
+public final class RetencionDAO {
     
     protected frmMonitor frmMonitor;
     
