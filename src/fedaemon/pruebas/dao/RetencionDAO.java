@@ -32,6 +32,8 @@ import javax.xml.bind.JAXBElement;
 import javax.xml.bind.JAXBException;
 import javax.xml.bind.Marshaller;
 import javax.xml.namespace.QName;
+import org.apache.log4j.Logger;
+import org.apache.log4j.PropertyConfigurator;
 
 
 /**
@@ -41,6 +43,12 @@ import javax.xml.namespace.QName;
 public final class RetencionDAO {
     
     protected frmMonitor frmMonitor;
+    private final static Logger log = Logger.getLogger(FacturaDAO.class);
+    
+    public RetencionDAO()
+    {
+        PropertyConfigurator.configure("log4j.properties");
+    }
     
     //metodo para escanear la base
     public int consultarRetencionPendiente(ConexionBD con){
@@ -62,7 +70,7 @@ public final class RetencionDAO {
         result++;
         }
     }
-    catch(SQLException ex){System.out.println("[error] - error de ResultSet de consultarRetencionesPendientes");}
+    catch(SQLException ex){log.error("error de ResultSet de consultarRetencionesPendientes");}
     finally
         {
             
@@ -72,7 +80,7 @@ public final class RetencionDAO {
                 rs.close();
           }catch(SQLException se2)
           {
-              System.out.println("[error] - error de cerrar ResultSet de consultarRetencionPendiente");
+              log.error("error de cerrar ResultSet de consultarRetencionPendiente");
           } 
         }
      return result;
@@ -95,7 +103,7 @@ public final class RetencionDAO {
             result=cs.getInt(3);
         }
         catch(SQLException ex)
-        {System.out.println("[error] - error de CallableStatement de consultarRetencionPendiente");}
+        {log.error("error de CallableStatement de consultarRetencionPendiente");}
         finally
         {
             try{
@@ -104,7 +112,7 @@ public final class RetencionDAO {
           }
             catch(SQLException se2)
           {
-              System.out.println("[error] - error de cerrar CAllableStatement de consultarRetencionesPendientes");
+              log.error("error de cerrar CAllableStatement de consultarRetencionesPendientes");
           }
         }
 
@@ -310,7 +318,7 @@ public final class RetencionDAO {
                 }
                 catch(SQLException e)
                 {
-                    System.out.println("[error] - Error al empaquetar el documento. "+e.getMessage());
+                    log.error("Error al empaquetar el documento. "+e.getMessage());
                     this.frmMonitor.setMensajeRetenciones("[error] - Error al empaquetar el documento. "+e.getMessage());
                 }
                 finally{
@@ -407,7 +415,7 @@ public final class RetencionDAO {
         catch(SQLException | NumberFormatException ex)
         {
             this.frmMonitor.setMensajeRetenciones("[error] - Error general al enviar a autorizar");
-            System.out.println("[error] - Error general al enviar a autorizar");
+            log.error("Error general al enviar a autorizar");
         }
         finally
         {
@@ -461,7 +469,7 @@ public final class RetencionDAO {
         catch(SQLException sqle)
         {
             this.frmMonitor.setMensajeRetenciones("[error] - Error al actualizar registros");
-            System.out.println("[error] - Error al actualizar registros");
+            log.error("Error al actualizar registros");
         }
         finally
         {
@@ -472,7 +480,7 @@ public final class RetencionDAO {
                     ps.close();
                 }
                 catch(SQLException e){
-                System.out.println("[error] - Error al cerrar PreparedStatement");}
+                log.error("Error al cerrar PreparedStatement");}
             }
         }
     return result;
@@ -509,7 +517,7 @@ public final class RetencionDAO {
 //        int n=call.executeUpdate();
         n=ps.executeUpdate();
         }
-        catch(SQLException ex){System.out.println("[error] - Error al insertar registros");}
+        catch(SQLException ex){log.error("Error al insertar registros");}
         finally
         {
             if(ps!=null)
@@ -519,7 +527,7 @@ public final class RetencionDAO {
                     ps.close();
                 }
                 catch(SQLException e){
-                System.out.println("[error] - Error al cerrar PreparedStatement");}
+                log.error("Error al cerrar PreparedStatement");}
             }
         }
         
@@ -564,11 +572,11 @@ public final class RetencionDAO {
         }
         catch(SQLException sqle)
         {
-            System.out.println("[error] - Error al actualizar estado del proceso");
+            log.error("Error al actualizar estado del proceso");
         }
         catch(UnknownHostException uhe)
         {
-            System.out.println("[error] - Error al recuperar InetAddress");
+            log.error("Error al recuperar InetAddress");
         }
         finally
         {
@@ -579,7 +587,7 @@ public final class RetencionDAO {
                     ps.close();
                 }
                 catch(SQLException e){
-                System.out.println("[error] - Error al cerrar PreparedStatement");}
+                log.error("Error al cerrar PreparedStatement");}
             }
         }
           

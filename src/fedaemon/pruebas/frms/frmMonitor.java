@@ -2,7 +2,7 @@
 
 package fedaemon.pruebas.frms;
 
-import fedaemon.pruebas.hilos.ThreadAutorizarComprobanteRetencion;
+import fedaemon.pruebas.hilos.ThreadAutorizarRetencion;
 import fedaemon.pruebas.hilos.ThreadAutorizarFactura;
 import fedaemon.pruebas.hilos.ThreadAutorizarNotaCredito;
 import fedaemon.pruebas.hilos.ThreadAutorizarNotaDebito;
@@ -107,7 +107,7 @@ public final class frmMonitor extends javax.swing.JFrame {
     System.out.println("Iniciando el proceso demonio... ");
         
             threadAutorizarFacturas=new ThreadAutorizarFactura();
-            threadAutorizarRetenciones=new ThreadAutorizarComprobanteRetencion();
+            threadAutorizarRetenciones=new ThreadAutorizarRetencion();
             threadAutorizarNotaCredito=new ThreadAutorizarNotaCredito();
             threadAutorizarNotaDebito=new ThreadAutorizarNotaDebito(); 
             
@@ -157,7 +157,6 @@ public final class frmMonitor extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Autorización de Documentos Electrónicos FEDaemonTest");
-        setUndecorated(true);
         addWindowListener(new java.awt.event.WindowAdapter() {
             public void windowClosed(java.awt.event.WindowEvent evt) {
                 formWindowClosed(evt);
@@ -380,7 +379,7 @@ public final class frmMonitor extends javax.swing.JFrame {
 
     private ConexionBD conexionBD;
     ThreadAutorizarFactura threadAutorizarFacturas;
-    ThreadAutorizarComprobanteRetencion threadAutorizarRetenciones;
+    ThreadAutorizarRetencion threadAutorizarRetenciones;
     ThreadAutorizarNotaCredito threadAutorizarNotaCredito;
     ThreadAutorizarNotaDebito threadAutorizarNotaDebito;
     private Servicio servicio;

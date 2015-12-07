@@ -5,6 +5,8 @@ package fedaemon.pruebas.util;
 import fedaemon.pruebas.frms.frmConexionBD;
 import java.io.File;
 import java.lang.management.ManagementFactory;
+import org.apache.log4j.Logger;
+import org.apache.log4j.PropertyConfigurator;
 
 /**
  *
@@ -22,9 +24,11 @@ public final class FEDaemon {
     private static Servicio servicioTevsur=null;
     private static frmConexionBD frmConexionTevcol=null;
     private static frmConexionBD frmConexionTevsur=null;
-    
+    private final static Logger log=Logger.getLogger(FEDaemon.class);
     
     public static void main(String[] args) {
+        
+        PropertyConfigurator.configure("log4j.properties");
         
         empresaTevcol=new Empresa();
         empresaTevcol.setNombre("TEVCOL");
@@ -37,7 +41,7 @@ public final class FEDaemon {
         
         servicioTevcol=new Servicio();
         servicioTevcol.setAmbiente("1");
-        servicioTevcol.setVersion("2015.10.29");
+        servicioTevcol.setVersion("2015.12.07");
         servicioTevcol.setSo(System.getProperty("os.name"));
         servicioTevcol.setArquitectura(System.getProperty("os.arch"));
         servicioTevcol.setPid(pid());
@@ -61,7 +65,7 @@ public final class FEDaemon {
         
         servicioTevsur=new Servicio();
         servicioTevsur.setAmbiente("1");
-        servicioTevsur.setVersion("2015.10.29");
+        servicioTevsur.setVersion("2015.10.07");
         servicioTevsur.setSo(System.getProperty("os.name"));
         servicioTevsur.setArquitectura(System.getProperty("os.arch"));
         servicioTevsur.setPid(pid());
@@ -79,11 +83,11 @@ public final class FEDaemon {
     
     public static void crearDirectoriosTevcol(){
         //Sistema Operativo
-        System.out.println("Sistema Operativo: " + System.getProperty("os.name"));
+        log.info("Sistema Operativo: " + System.getProperty("os.name"));
         //Arquitectura
-        System.out.println("Sobre arquitectura: " + System.getProperty("os.arch"));
+        log.info("Sobre arquitectura: " + System.getProperty("os.arch"));
         //Version  
-        System.out.println("Versión " + System.getProperty("os.version"));
+        log.info("Versión " + System.getProperty("os.version"));
     
         if(System.getProperty("os.name").contains("Windows"))
         {
@@ -127,7 +131,7 @@ public final class FEDaemon {
         }
         if(System.getProperty("os.name").contains("Linux"))
         {
-            System.out.println("PID del proceso: " + pid());
+            log.info("PID del proceso: " + pid());
             
             
             String carpeta = "FEDaemonTEVCOL";
@@ -170,11 +174,11 @@ public final class FEDaemon {
     
     private static void crearDirectoriosTevsur(){
     //Sistema Operativo
-        System.out.println("Sistema Operativo: " + System.getProperty("os.name"));
+        log.info("Sistema Operativo: " + System.getProperty("os.name"));
         //Arquitectura
-        System.out.println("Sobre arquitectura: " + System.getProperty("os.arch"));
+        log.info("Sobre arquitectura: " + System.getProperty("os.arch"));
         //Version  
-        System.out.println("Versión " + System.getProperty("os.version"));
+        log.info("Versión " + System.getProperty("os.version"));
     
         if(System.getProperty("os.name").contains("Windows"))
         {

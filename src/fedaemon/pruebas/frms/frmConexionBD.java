@@ -122,7 +122,7 @@ public final class frmConexionBD extends javax.swing.JFrame {
         jLabel5 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setTitle("Ambiente: PRUEBAS - Conexión a la base de datos - TEVCOL");
+        setTitle("Ambiente: PRUEBAS - Conexión a la base de datos");
         setIconImage(getIconImage());
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 

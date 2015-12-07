@@ -36,6 +36,8 @@ import javax.xml.bind.JAXBElement;
 import javax.xml.bind.JAXBException;
 import javax.xml.bind.Marshaller;
 import javax.xml.namespace.QName;
+import org.apache.log4j.Logger;
+import org.apache.log4j.PropertyConfigurator;
 
 
 /**
@@ -45,6 +47,12 @@ import javax.xml.namespace.QName;
 public final class NotaCreditoDAO {
     
     protected frmMonitor frmMonitor;
+    private final static Logger log = Logger.getLogger(FacturaDAO.class);
+    
+    public NotaCreditoDAO()
+    {
+        PropertyConfigurator.configure("log4j.properties");
+    }
     
     public int consultarNotaCreditoPendiente(ConexionBD con){
         int result=0;
@@ -65,7 +73,7 @@ public final class NotaCreditoDAO {
             result++;
             }
         }
-        catch(SQLException ex){System.out.println("[error] - error de ResultSet de consultaNotasCreditoPendientes");}
+        catch(SQLException ex){log.error("error de ResultSet de consultaNotasCreditoPendientes");}
         finally
             {
 
@@ -75,7 +83,7 @@ public final class NotaCreditoDAO {
                     rs.close();
               }catch(SQLException se2)
               {
-                  System.out.println("[error] - error de cerrar ResultSet de consultaNotasCreditoPendientes");
+                  log.error("error de cerrar ResultSet de consultaNotasCreditoPendientes");
               } 
             }
          return result;
@@ -95,7 +103,7 @@ public final class NotaCreditoDAO {
         cs.execute();
 
         result=cs.getInt(3);
-        }catch(SQLException ex){System.out.println("[error] - error de ResultSet de consultaFacturasPendientes");}
+        }catch(SQLException ex){log.error("error de ResultSet de consultaFacturasPendientes");}
         finally{
             try
             {
@@ -104,7 +112,7 @@ public final class NotaCreditoDAO {
             }
             catch(SQLException se2)
           {
-              System.out.println("[error] - error de cerrar ResultSet de consultaNotasCreditoPendientes");
+              log.error("error de cerrar ResultSet de consultaNotasCreditoPendientes");
           }
         }
 
@@ -350,7 +358,7 @@ public final class NotaCreditoDAO {
             }
             catch(SQLException e)
             {
-                System.out.println("[error] - Error al empaquetar el documento. "+e.getMessage());
+                log.error("Error al empaquetar el documento. "+e.getMessage());
                 this.frmMonitor.setMensajeNC("[error] - Error al empaquetar el documento. "+e.getMessage());
             }
             finally{
@@ -445,7 +453,7 @@ public final class NotaCreditoDAO {
         catch(Exception ex)
         {
             this.frmMonitor.setMensajeNC("[error] - Error general al enviar a autorizar");
-            System.out.println("[error] - Error general al enviar a autorizar");
+            log.error("Error general al enviar a autorizar");
         }
         finally
         {
@@ -477,7 +485,7 @@ public final class NotaCreditoDAO {
         }
         catch(JAXBException ex)
         {
-            System.out.println("[error] - Error al generar xml");  
+            log.error("Error al generar xml");  
             this.frmMonitor.setMensajeNC("[error] - Error al generar xml");
         }
         finally{}
@@ -503,7 +511,7 @@ public final class NotaCreditoDAO {
         catch(SQLException ex)
         {
             this.frmMonitor.setMensajeNC("[error] - Error al actualizar registros");
-            System.out.println("[error] - Error al actualizar registros");
+            log.error("Error al actualizar registros");
         }
         finally
         {
@@ -514,7 +522,7 @@ public final class NotaCreditoDAO {
                     ps.close();
                 }
                 catch(SQLException e){
-                System.out.println("[error] - Error al cerrar PreparedStatement");}
+                log.error("Error al cerrar PreparedStatement");}
             }  
         }
         return result;
@@ -555,7 +563,7 @@ public final class NotaCreditoDAO {
         catch(SQLException sqle)
         {
             this.frmMonitor.setMensajeNC("[error] - Error al insertar notificación en el log");
-            System.out.println("[error] - Error al insertar notificación en el log");
+            log.error("Error al insertar notificación en el log");
         }
         finally
         {
@@ -566,7 +574,7 @@ public final class NotaCreditoDAO {
                     ps.close();
                 }
                 catch(SQLException e){
-                System.out.println("[error] - Error al cerrar PreparedStatement");}
+                log.error("Error al cerrar PreparedStatement");}
             }
         }
         return n;
@@ -609,11 +617,11 @@ public final class NotaCreditoDAO {
         }
         catch(SQLException sqle)
         {
-            System.out.println("[error] - Error al actualizar estado del proceso");
+            log.error("Error al actualizar estado del proceso");
         }
         catch(UnknownHostException uhe)
         {
-            System.out.println("[error] - Error al recuperar InetAddress");
+            log.error("Error al recuperar InetAddress");
         }
         finally
         {
@@ -624,7 +632,7 @@ public final class NotaCreditoDAO {
                     ps.close();
                 }
                 catch(SQLException e){
-                System.out.println("[error] - Error al cerrar PreparedStatement");}
+                log.error("Error al cerrar PreparedStatement");}
             }
         }
         
